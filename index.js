@@ -7,10 +7,10 @@ app.use(cors());
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get("/", (req, res, next) => {
-  res.send("Manik Singla");
-});
-// const rds = require("./config/rds");
+// app.get("/", (req, res, next) => {
+//   res.send("Manik Singla");
+// });
+const rds = require("./config/rds");
 // const dynamodb = require("./config/dynamodb");
 // app.use(function (req, res, next) {
 //   req.rds = rds;
