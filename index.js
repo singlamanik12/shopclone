@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.get("/", (req, res, next) => {
 //   res.send("Manik Singla");
 // });
-const rds = require("./config/rds");
+const rds = require("./Config/rds");
 // const dynamodb = require("./config/dynamodb");
 // app.use(function (req, res, next) {
 //   req.rds = rds;
