@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //   res.send("Manik Singla");
 // });
 const rds = require("./Config/rds");
-// const dynamodb = require("./config/dynamodb");
+const dynamodb = require("./Config/dynamodb");
 // app.use(function (req, res, next) {
 //   req.rds = rds;
 //   req.dynamodb = dynamodb;
