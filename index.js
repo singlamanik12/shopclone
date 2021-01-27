@@ -12,12 +12,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // });
 const rds = require("./Config/rds");
 const dynamodb = require("./Config/dynamodb");
-// app.use(function (req, res, next) {
-//   req.rds = rds;
-//   req.dynamodb = dynamodb;
-//   res.send("helloworld");
-//   next();
-// });
+app.use(function (req, res, next) {
+  req.rds = rds;
+  req.dynamodb = dynamodb;
+  next();
+});
 
 // app.use("/user", require("./routes/user"));
 
