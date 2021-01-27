@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-// app.use("/user", require("./routes/user"));
+app.use("/user", require("./routes/user"));
 
 app.listen(process.env.PORT || 9000, () =>
   console.log(`Always watching... on port `)
